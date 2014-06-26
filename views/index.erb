@@ -1,7 +1,9 @@
 <!DOCTYPE HTML>
 <html>
   <head>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <link rel="stylesheet" href="/css/application.css" title="application" type="text/css" media="all" />
+    <link rel="stylesheet" href="/css/magnific/magnific.css" title="application" type="text/css" media="all" />
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
 
     <title>Hello World</title>
@@ -20,7 +22,10 @@
         </div>
 
         <div class="right-gutter">
-          <a href="#">x</a>
+          <div id="test-popup-<%= i %>" class="white-popup mfp-hide">
+            Hello World, this is popup <%= i %>
+          </div>
+          <a href="/some-crap/<%= i %>.html" class="open-popup-link">x</a>
         </div>
       </section>
 
@@ -42,5 +47,18 @@
         </section>
       <% end %>
     <% end %>
+    <script type="text/javascript" charset="utf-8" src="/js/magnific/magnific.min.js"></script>
+    <script type="text/javascript" charset="utf-8">
+      $('.open-popup-link').magnificPopup({
+type:'ajax',
+dataType: 'html',
+callbacks: {
+  parseAjax: function(resp) {
+    console.log( resp );
+  }
+}
+      });
+
+    </script>
   </body>
 </html>

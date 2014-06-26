@@ -87,3 +87,11 @@ section.product {
     border: 1px solid green; }
     section.product .purchase-info .remove:last-child {
       margin-right: 0; }
+
+.white-popup {
+  position: relative;
+  background: #FFFFFF;
+  padding: 20px;
+  width: auto;
+  max-width: 500px;
+  margin: 20px auto; }
