@@ -1,0 +1,72 @@
+@import 'bourbon/bourbon';
+@import 'neat/neat';
+@import 'neat/neat-helpers';
+
+$mobile: new-breakpoint(max-width 320px 4);
+$visual-grid: true;
+
+/* USEFUL: http://css-tricks.com/fluid-width-equal-height-columns/ **/
+section.category {
+  border-bottom: 1px dashed grey;
+  @include outer-container;
+  overflow: hidden;
+
+  div {
+    padding-top: 20px;
+    float: left;
+    margin-bottom: -9999px;
+    padding-bottom: 9999px;
+  }
+
+  div.checkbox {
+    background-color: purple;
+    text-align: center;
+    @include span-columns(2);
+  }
+
+  div.category-info {
+
+    h2 { padding-top: 0; margin-top: 0 }
+    @include span-columns(8);
+  }
+
+  div.right-gutter {
+    @include span-columns(2);
+    border: 1px dotted green;
+    font-size: 24px;
+    left: 0;
+    text-align: center;
+
+    a {
+      text-decoration: none;
+      color: grey;
+    }
+  }
+}
+
+section.product {
+  @include outer-container;
+  background-color: red;
+  padding-top: 20px;
+  text-align: center;
+
+  .purchase-info {
+    input {
+      height: 40px;
+      @include span-columns(4);
+    }
+    .want-have {
+    }
+    .remove {
+      @include span-columns(4);
+      display: block;
+      height: 40px;
+      text-decoration: none;
+      text-transform: uppercase;
+      color: grey;
+      font-size: 12px;
+      padding: 10px;
+      border: 1px solid green;
+    }
+  }
+}

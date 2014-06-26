@@ -1,0 +1,46 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <link rel="stylesheet" href="/css/application.css" title="application" type="text/css" media="all" />
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+
+    <title>Hello World</title>
+  </head>
+
+  <body>
+    <% 5.times do |i| %>
+      <section class="category">
+        <div class="checkbox">
+          <input type="checkbox" name="" id="" value="" />
+        </div>
+
+        <div class="category-info">
+          <h2>Product Category</h2>
+          <p>notes</p>
+        </div>
+
+        <div class="right-gutter">
+          <a href="#">x</a>
+        </div>
+      </section>
+
+      <% if i == 1 %>
+        <section class="product">
+          <div class='product-info'>
+            <img src="http://placehold.it/50x50" alt="a product image" />
+
+            <h4 class="name">product name</h4>
+            <h3 class="company">the honest company</h3>
+            <p class="price">$45.99</p>
+          </div>
+
+          <div class="purchase-info">
+            <input type="text" name="" id="" value="Have 0/1" class="want-have" />
+            <input type="button" name="" id="" value="Add To Cart" class="add-to-cart"/>
+            <a href="#" class="remove">remove</a>
+          </div>
+        </section>
+      <% end %>
+    <% end %>
+  </body>
+</html>

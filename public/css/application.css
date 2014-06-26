@@ -1,0 +1,89 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/* USEFUL: http://css-tricks.com/fluid-width-equal-height-columns/ **/
+section.category {
+  border-bottom: 1px dashed grey;
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden; }
+  section.category:after {
+    content: "";
+    display: table;
+    clear: both; }
+  section.category div {
+    padding-top: 20px;
+    float: left;
+    margin-bottom: -9999px;
+    padding-bottom: 9999px; }
+  section.category div.checkbox {
+    background-color: purple;
+    text-align: center;
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 14.70196%; }
+    section.category div.checkbox:last-child {
+      margin-right: 0; }
+  section.category div.category-info {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 65.88078%; }
+    section.category div.category-info h2 {
+      padding-top: 0;
+      margin-top: 0; }
+    section.category div.category-info:last-child {
+      margin-right: 0; }
+  section.category div.right-gutter {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 14.70196%;
+    border: 1px dotted green;
+    font-size: 24px;
+    left: 0;
+    text-align: center; }
+    section.category div.right-gutter:last-child {
+      margin-right: 0; }
+    section.category div.right-gutter a {
+      text-decoration: none;
+      color: grey; }
+
+section.product {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: red;
+  padding-top: 20px;
+  text-align: center; }
+  section.product:after {
+    content: "";
+    display: table;
+    clear: both; }
+  section.product .purchase-info input {
+    height: 40px;
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 31.76157%; }
+    section.product .purchase-info input:last-child {
+      margin-right: 0; }
+  section.product .purchase-info .remove {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 31.76157%;
+    display: block;
+    height: 40px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: grey;
+    font-size: 12px;
+    padding: 10px;
+    border: 1px solid green; }
+    section.product .purchase-info .remove:last-child {
+      margin-right: 0; }
