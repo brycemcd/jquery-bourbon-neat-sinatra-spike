@@ -1,90 +1,50 @@
-<!DOCTYPE HTML>
-<html>
-  <head>
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.0-beta.13/angular.min.js"></script>
-    <script type="text/javascript" charset="utf-8" src="/js/todo.js"></script>
+<% 5.times do |i| %>
+  <section class="category">
+    <div class="checkbox">
+      <input type="checkbox" name="" id="" value="" />
+    </div>
 
-    <link rel="stylesheet" href="/css/application.css" title="application" type="text/css" media="all" />
-    <link rel="stylesheet" href="/css/magnific/magnific.css" title="application" type="text/css" media="all" />
-    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <div class="category-info">
+      <h2>Product Category</h2>
+      <p>notes</p>
+    </div>
 
-    <title>Hello World</title>
-  </head>
+    <div class="right-gutter">
+      <div id="test-popup-<%= i %>" class="white-popup mfp-hide">
+        Hello World, this is popup <%= i %>
+    </div>
+      <a href="/some-crap/<%= i %>.html" class="open-popup-link">x</a>
+    </div>
+</section>
 
-  <body>
-    <section ng-app="todoApp">
-      <div>
-        <label for="">Name</label>
-        <input type="text" placeholder="testing name" ng-model="yourName"/>
-        <h2> Hello {{yourName}}</h2>
-      </div>
-      <div ng-controller="TodoCtrl">
-        <span>{{remaining()}} of {{todos.length}} remaining</span>
-        [ <a href="#" ng-click="archive()">archive</a> ]
-        <ul>
-          <li ng-repeat="todo in todos">
-            <input type="checkbox" ng-model="todo.done" />
-            <span class="done-{{todo.done}}">{{todo.text}}</span>
-          </li>
-        </ul>
+<% if i == 1 %>
+  <section class="product">
+  <div class='product-info'>
+    <img src="http://placehold.it/50x50" alt="a product image" />
 
-        <form ng-submit="addTodo()">
-          <input type="checkbox" name="todo-done" id="todo-done" value="false" ng-model="todo.done" />
-          <input type="text" name="add-todo" id="add-todo" placeholder="add todo" size="30" ng-model="todo.text"/>
-          <input type="submit" name="submit" id="submit" value="add" />
-        </form>
-      </div>
-    </section>
-    <% 5.times do |i| %>
-      <section class="category">
-        <div class="checkbox">
-          <input type="checkbox" name="" id="" value="" />
-        </div>
+    <h4 class="name">product name</h4>
+    <h3 class="company">the honest company</h3>
+    <p class="price">$45.99</p>
+  </div>
 
-        <div class="category-info">
-          <h2>Product Category</h2>
-          <p>notes</p>
-        </div>
-
-        <div class="right-gutter">
-          <div id="test-popup-<%= i %>" class="white-popup mfp-hide">
-            Hello World, this is popup <%= i %>
-          </div>
-          <a href="/some-crap/<%= i %>.html" class="open-popup-link">x</a>
-        </div>
-      </section>
-
-      <% if i == 1 %>
-        <section class="product">
-          <div class='product-info'>
-            <img src="http://placehold.it/50x50" alt="a product image" />
-
-            <h4 class="name">product name</h4>
-            <h3 class="company">the honest company</h3>
-            <p class="price">$45.99</p>
-          </div>
-
-          <div class="purchase-info">
-            <input type="text" name="" id="" value="Have 0/1" class="want-have" />
-            <input type="button" name="" id="" value="Add To Cart" class="add-to-cart"/>
-            <a href="#" class="remove">remove</a>
-          </div>
-        </section>
+  <div class="purchase-info">
+    <input type="text" name="" id="" value="Have 0/1" class="want-have" />
+    <input type="button" name="" id="" value="Add To Cart" class="add-to-cart"/>
+    <a href="#" class="remove">remove</a>
+  </div>
+</section>
       <% end %>
     <% end %>
-    <script type="text/javascript" charset="utf-8" src="/js/magnific/magnific.min.js"></script>
-    <script type="text/javascript" charset="utf-8">
-      $('.open-popup-link').magnificPopup({
+<script type="text/javascript" charset="utf-8" src="/js/magnific/magnific.min.js"></script>
+<script type="text/javascript" charset="utf-8">
+$('.open-popup-link').magnificPopup({
 type:'ajax',
 dataType: 'html',
 callbacks: {
-  parseAjax: function(resp) {
-    console.log( resp );
-  }
+parseAjax: function(resp) {
+console.log( resp );
 }
-      });
+}
+});
 
-    </script>
-  </body>
-</html>
+</script>

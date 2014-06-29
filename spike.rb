@@ -11,3 +11,7 @@ get '/some-crap/:i.html' do
           </div>
   STR
 end
+
+get '/angular' do
+  erb :angular
+end
