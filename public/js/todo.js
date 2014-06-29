@@ -1,17 +1,25 @@
 // TODO app
 
-function TodoCtrl($scope) {
-  $scope.todos = [
+var todoApp = angular.module('todoApp', []);
+
+todoApp.factory('Todo', function() {
+  return [
     { text: 'dink around with angular', done: false},
     { text: 'take shower', done: false},
     { text: 'learn to talk to girls', done: false}
   ];
+});
+function TodoCtrl($scope, Todo) {
+  $scope.todos = Todo
 
   $scope.addTodo = function() {
+    todoObj = {text: $scope.todo.text, done: $scope.todo.done}
+    console.log(todoObj);
     $scope.todos.push(
-      {text: $scope.todoText, done: false}
+      todoObj
     );
-    $scope.todoText = '';
+    $scope.todo.text = '';
+    $scope.todo.done = false;
   };
 
   $scope.remaining = function() {
