@@ -9,15 +9,29 @@ todoApp.factory('Todo', function() {
     { text: 'learn to talk to girls', done: false}
   ];
 });
-function TodoCtrl($scope, Todo) {
-  $scope.todos = Todo
+
+todoApp.factory('CitiBikeStations', function() {
+  // TODO: figure out how to request live data
+  return window.citibike.stationBeanList;
+});
+
+todoApp.directive('selectStation', function() {
+    return {
+      restrict: "A",
+      scope: { stationName: "&" },
+      link: function(scope) {
+        console.log(scope);
+      }
+    };
+});
+
+function TodoCtrl($scope, Todo, CitiBikeStations) {
+  $scope.todos = Todo;
+  $scope.stations = CitiBikeStations;
 
   $scope.addTodo = function() {
     todoObj = {text: $scope.todo.text, done: $scope.todo.done}
-    console.log(todoObj);
-    $scope.todos.push(
-      todoObj
-    );
+    $scope.todos.push( todoObj );
     $scope.todo.text = '';
     $scope.todo.done = false;
   };

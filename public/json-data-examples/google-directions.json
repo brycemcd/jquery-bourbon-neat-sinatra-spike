@@ -1,0 +1,265 @@
+{
+   "routes" : [
+      {
+         "bounds" : {
+            "northeast" : {
+               "lat" : 40.7559504,
+               "lng" : -73.97770109999999
+            },
+            "southwest" : {
+               "lat" : 40.7258167,
+               "lng" : -74.00746289999999
+            }
+         },
+         "copyrights" : "Map data ©2014 Google",
+         "legs" : [
+            {
+               "distance" : {
+                  "text" : "3.3 mi",
+                  "value" : 5323
+               },
+               "duration" : {
+                  "text" : "20 mins",
+                  "value" : 1220
+               },
+               "end_address" : "Grand Central, 87 East 42nd Street, New York, NY 10017, USA",
+               "end_location" : {
+                  "lat" : 40.75212020000001,
+                  "lng" : -73.97770109999999
+               },
+               "start_address" : "161 Avenue of the Americas, New York, NY 10013, USA",
+               "start_location" : {
+                  "lat" : 40.7258167,
+                  "lng" : -74.00391599999999
+               },
+               "steps" : [
+                  {
+                     "distance" : {
+                        "text" : "164 ft",
+                        "value" : 50
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 9
+                     },
+                     "end_location" : {
+                        "lat" : 40.7262415,
+                        "lng" : -74.00373379999999
+                     },
+                     "html_instructions" : "Head \u003cb\u003enorth\u003c/b\u003e on \u003cb\u003eAvenue of the Americas\u003c/b\u003e toward \u003cb\u003eVandam St\u003c/b\u003e",
+                     "polyline" : {
+                        "points" : "kgqwFn{tbMsAe@"
+                     },
+                     "start_location" : {
+                        "lat" : 40.7258167,
+                        "lng" : -74.00391599999999
+                     },
+                     "travel_mode" : "BICYCLING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "0.2 mi",
+                        "value" : 316
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 79
+                     },
+                     "end_location" : {
+                        "lat" : 40.7265768,
+                        "lng" : -74.00746289999999
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eleft\u003c/b\u003e onto \u003cb\u003eVandam St\u003c/b\u003e",
+                     "maneuver" : "turn-left",
+                     "polyline" : {
+                        "points" : "_jqwFhztbMa@fKa@`J"
+                     },
+                     "start_location" : {
+                        "lat" : 40.7262415,
+                        "lng" : -74.00373379999999
+                     },
+                     "travel_mode" : "BICYCLING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "0.7 mi",
+                        "value" : 1161
+                     },
+                     "duration" : {
+                        "text" : "4 mins",
+                        "value" : 254
+                     },
+                     "end_location" : {
+                        "lat" : 40.7368739,
+                        "lng" : -74.0055605
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eright\u003c/b\u003e onto \u003cb\u003eHudson St\u003c/b\u003e",
+                     "maneuver" : "turn-right",
+                     "polyline" : {
+                        "points" : "clqwFrqubMoCW{BQUASAyBUsCUqCYqCUoCWcAIsAM_CUcCS_CQOEMC{BQ}BSOAOA_AKe@GKAMEICKGGGGEMOIK"
+                     },
+                     "start_location" : {
+                        "lat" : 40.7265768,
+                        "lng" : -74.00746289999999
+                     },
+                     "travel_mode" : "BICYCLING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "1.5 mi",
+                        "value" : 2468
+                     },
+                     "duration" : {
+                        "text" : "9 mins",
+                        "value" : 522
+                     },
+                     "end_location" : {
+                        "lat" : 40.7559504,
+                        "lng" : -73.99072319999999
+                     },
+                     "html_instructions" : "Continue onto \u003cb\u003e8th Ave\u003c/b\u003e",
+                     "polyline" : {
+                        "points" : "mlswFveubMUWqB}Bi@m@iAuAOOg@o@QSs@w@{@eA}@{@iAu@qAy@y@k@}B{A_Am@u@g@uBuAy@i@{@i@sBwA}@i@w@i@{BwAcAq@_Ao@cC_Bw@i@eAq@{ByA{ByAyByA{ByA{ByAcAq@u@g@cCaBs@c@}@m@sA{@s@e@eC_ByByA{ByA{ByA{ByA{B{A"
+                     },
+                     "start_location" : {
+                        "lat" : 40.7368739,
+                        "lng" : -74.0055605
+                     },
+                     "travel_mode" : "BICYCLING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "0.4 mi",
+                        "value" : 708
+                     },
+                     "duration" : {
+                        "text" : "3 mins",
+                        "value" : 189
+                     },
+                     "end_location" : {
+                        "lat" : 40.7528618,
+                        "lng" : -73.98336909999999
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eright\u003c/b\u003e onto \u003cb\u003eW 40th St\u003c/b\u003e",
+                     "maneuver" : "turn-right",
+                     "polyline" : {
+                        "points" : "ucwwF~hrbMnFuPpAcE|CuJd@}A\\iAn@sBTq@"
+                     },
+                     "start_location" : {
+                        "lat" : 40.7559504,
+                        "lng" : -73.99072319999999
+                     },
+                     "travel_mode" : "BICYCLING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "459 ft",
+                        "value" : 140
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 24
+                     },
+                     "end_location" : {
+                        "lat" : 40.7539632,
+                        "lng" : -73.9825647
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eleft\u003c/b\u003e toward \u003cb\u003eW 42nd St\u003c/b\u003e",
+                     "maneuver" : "turn-left",
+                     "polyline" : {
+                        "points" : "kpvwF`{pbMKGEEUOQKc@YMIMI_@WIGUMSOMK"
+                     },
+                     "start_location" : {
+                        "lat" : 40.7528618,
+                        "lng" : -73.98336909999999
+                     },
+                     "travel_mode" : "BICYCLING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "217 ft",
+                        "value" : 66
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 12
+                     },
+                     "end_location" : {
+                        "lat" : 40.7537063,
+                        "lng" : -73.98187919999999
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eright\u003c/b\u003e toward \u003cb\u003eW 42nd St\u003c/b\u003e",
+                     "maneuver" : "turn-right",
+                     "polyline" : {
+                        "points" : "gwvwF~upbMBI@CJ_@^gAAC?C?A@G"
+                     },
+                     "start_location" : {
+                        "lat" : 40.7539632,
+                        "lng" : -73.9825647
+                     },
+                     "travel_mode" : "BICYCLING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "66 ft",
+                        "value" : 20
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 5
+                     },
+                     "end_location" : {
+                        "lat" : 40.7538658,
+                        "lng" : -73.98177560000001
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eleft\u003c/b\u003e toward \u003cb\u003eW 42nd St\u003c/b\u003e",
+                     "maneuver" : "turn-left",
+                     "polyline" : {
+                        "points" : "uuvwFvqpbMECYO"
+                     },
+                     "start_location" : {
+                        "lat" : 40.7537063,
+                        "lng" : -73.98187919999999
+                     },
+                     "travel_mode" : "BICYCLING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "0.2 mi",
+                        "value" : 394
+                     },
+                     "duration" : {
+                        "text" : "2 mins",
+                        "value" : 126
+                     },
+                     "end_location" : {
+                        "lat" : 40.75212020000001,
+                        "lng" : -73.97770109999999
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eright\u003c/b\u003e onto \u003cb\u003eW 42nd St\u003c/b\u003e\u003cdiv style=\"font-size:0.9em\"\u003eDestination will be on the left\u003c/div\u003e",
+                     "maneuver" : "turn-right",
+                     "polyline" : {
+                        "points" : "uvvwFbqpbM`@oAf@aBhC_IlAwDZ}@L[HWDM@E"
+                     },
+                     "start_location" : {
+                        "lat" : 40.7538658,
+                        "lng" : -73.98177560000001
+                     },
+                     "travel_mode" : "BICYCLING"
+                  }
+               ],
+               "via_waypoint" : []
+            }
+         ],
+         "overview_polyline" : {
+            "points" : "kgqwFn{tbMsAe@a@fKa@`JoCWqCSmCWgQ}A{KaAoCWiCU}Ec@q@IWISOUU{DoEsCiDoB}B}@{@iAu@kCeB}DiCaHqEeJcGwVkP{T}NoLyHwFsD{B{AnFuPnFyPbAgDdAeDQMyA_AmAw@a@[DMj@gBAG@IECYO`@oApDaL`CiHFS"
+         },
+         "summary" : "8th Ave",
+         "warnings" : [
+            "Bicycling directions are in beta. Use caution – This route may contain streets that aren't suited for bicycling."
+         ],
+         "waypoint_order" : []
+      }
+   ],
+   "status" : "OK"
+}

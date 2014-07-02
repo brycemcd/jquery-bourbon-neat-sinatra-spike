@@ -19,5 +19,17 @@
       <input type="text" name="add-todo" id="add-todo" placeholder="add todo" size="30" ng-model="todo.text"/>
       <input type="submit" name="submit" id="submit" value="add" />
     </form>
+
+    <div id='citibike-stations'>
+      <span>{{stationSelected}}</span>
+      <dl ng-repeat="station in stations">
+          <dt> <a select-station station-name='{{station.stationName}}'>{{station.stationName}} </a> </dt>
+          <dd>
+            {{station.availableBikes}} Available Bikes <br />
+            {{station.availableDocks}} Available Docks
+          </dd>
+      </dl>
+    </div>
   </div>
 </section>
+
